@@ -1,0 +1,73 @@
+.container-editor-profile
+    display: flex
+    justify-content: center
+    width: 100%
+.editor-profile
+    display: flex
+    flex-direction: column
+    width: auto
+    box-shadow: 0 0 0 1px #7f00ac
+    background: #392e5c
+    color: #dad8de
+    padding: 4%
+    margin-top: 3%
+    position: relative
+    .error-name
+        color: red
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 7%
+    .save
+        margin-top: 5%
+        padding: 0.5em 0 !important
+    @media screen and ( max-width:  330px)
+        padding: 1em !important
+    .remove
+        margin-top: 5%
+    @media only screen and (max-width: 1300px)
+        padding: 4%
+    @media only screen and (max-width: 1025px)
+        padding: 6%
+    @media screen and ( max-width:  770px)
+        padding: 8%
+    @media screen and ( max-width:  484px)
+        padding: 10%
+.editor-header
+    //border: 2px solid green
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    padding: 10px
+    width: 100%
+    .editor-avatar
+        display: flex
+        //flex-direction: column
+        position: relative
+        z-index: 10
+        img
+            width: 6em
+            height: 6em
+            border-radius: 50%
+            object-fit: cover
+            border: 2px solid rgba(51, 51, 51, 0.26)
+            @media screen and ( max-width:  1025px)
+                width: 5em
+                height: 5em
+        input[type='file']
+            display: none
+        .inp-upload
+            position: absolute
+            bottom: -15px
+            right: 0
+            margin-top: 10px
+            display: inline-block
+            cursor: pointer
+    p
+        margin-top: 10%
+        margin-bottom: 0
+.inp-name
+    font-size: 16px
+    @media screen and ( max-width:  1300px)
+        font-size: 14px

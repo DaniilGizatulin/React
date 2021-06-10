@@ -1,0 +1,8 @@
+export const LOGIN_USER = 'LOGIN_USER'
+export const ERROR = 'ERROR'
+export const LOGOUT = 'LOGOUT'
+export const LOADED = 'LOADED'
+export const DELETED = 'DELETED'
+export const ALL_USERS = 'ALL_USERS'
+export const POST_USER = 'POST_USER'
+export const AUTH_TOKEN = 'AUTH_TOKEN'

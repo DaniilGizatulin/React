@@ -1,0 +1,122 @@
+.form-error
+    text-align: center
+    color: red
+    margin-top: 10px
+.border-error
+    border: 1px solid red !important
+.form-success
+    text-align: center
+    color: green
+    margin-top: 10px
+.editor
+    display: flex
+    justify-content: flex-end
+    margin: 0 auto
+    width: 70%
+    @media only screen and (max-width: 1300px)
+        width: 90%
+    @media only screen and (max-width: 1025px)
+        width: 100%
+    @media screen and ( max-width:  770px)
+        width: 100%
+
+.editor-body
+    width: 100%
+    input
+        outline: none
+        border: none
+        background: #201c2b
+        width: 100%
+        padding: 10px
+        color: white
+    input:focus
+        box-shadow: 0 0 0 1px #7f00ac
+        background: #201c2b
+    input::placeholder
+        color: #fafafa86
+    input[type='file']
+        display: none
+    textarea
+        outline: none
+        border: none
+        background-color: #201c2b
+        width: 100%
+        height: 170px
+        padding: 5px
+        resize: none
+        color: white
+        font-size: 16px
+    textarea:focus
+        background-color: #201c2b
+        color: white
+        box-shadow: 0 0 0 1px #7f00ac
+    textarea::placeholder
+        color: #fafafa86
+    .editor-description
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 10px 0px
+        p
+            margin-bottom: 0
+    .editor-image
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    .editor-full-text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+            margin-bottom: 0
+.btn-edit-post
+    outline: none
+    border: none
+    background: none
+    color: white
+    font-size: 1.5em
+.editor-full-text, .editor-description, .editor-header-post
+    display: flex
+    flex-direction: column
+    height: auto
+    .btn-edit-post
+        align-self: flex-end
+.menu-post
+    border: none
+    outline: none
+    background: none
+    max-height: 45px
+    color: white !important
+    font-size: 1.5em
+    .delete
+        outline: none
+        background: none
+        border: none
+.inp-upload
+    cursor: pointer
+.save
+    margin-top: 5%
+    padding: 1em 0em !important
+    outline: none
+    border: none
+    background-image: linear-gradient(134deg, #944fff 0, #af00ed 100%)
+    color: #dad8de
+    font-weight: 700
+
+.save:hover
+    background-image: linear-gradient(268deg, #944fff 0, #af00ed 100%)
+
+.btn-create
+    border: none
+    outline: none
+    background-image: linear-gradient(134deg, #944fff 0, #af00ed 100%)
+    padding: 1em 2em
+    color: white
+    font-weight: 700
+.message
+    margin-top: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+.save-edit
+    padding: 1em 0em !important

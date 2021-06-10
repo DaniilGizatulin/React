@@ -1,0 +1,249 @@
+.hidden
+    display: none
+.show
+    display: flex
+.header
+    width: 100%
+    background: #392e5c
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 10px
+    position: relative
+    .header-logo
+        display: flex
+        outline: none
+        border: none
+        background: initial
+        flex-direction: row
+        text-decoration: none
+        cursor: pointer
+        font-size: 30px
+        font-weight: bold
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif
+        .logo1
+            color: rgb(255, 255, 255)
+        .logo2
+            color: rgb(148, 79, 255)
+        @media screen and ( max-width: 1025px )
+            font-size: 22px
+    .log
+        outline: none
+        border: none
+        background-image: linear-gradient(134deg, #944fff 0, #af00ed 100%)
+        color: white
+        padding: 1em 2em
+        border-radius: 2px
+        font-weight: 700
+        line-height: 1
+        font-size: 1.1em
+        letter-spacing: 0.5px
+        &:hover
+            background-image: linear-gradient(268deg, #944fff 0, #af00ed 100%)
+        @media screen and ( max-width: 1300px )
+            padding: 1em 1.2em
+            font-size: 0.9em
+        @media screen and ( max-width: 1025px )
+            font-size: 0.85em
+        @media screen and ( max-width: 604px )
+            font-size: 1em
+
+    .navbar
+        padding: 0 0
+        @media screen and (max-width: 770px)
+            display: none
+        .search-panel
+            width: 320px
+            height: 50px
+        .response-search
+            display: flex
+            flex-direction: column
+            position: absolute
+            width: 320px
+            max-height: 500px
+            overflow: auto
+            background: #201c2b
+            border-radius: 2%
+            z-index: 100
+            box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.507)
+            button
+                outline: none
+                border: none
+                background: none
+                margin: 5px 0px
+                text-align: left
+                color: white
+                padding: 20px
+                &:hover
+                    background-color: #7f00ac
+                    transition: all 0.2s
+                &:focus
+                    background-color: #7f00ac
+                    transition: all 0.2s
+/* Nav-user*/
+.nav-user
+    width: 5em
+    display: flex
+    cursor: pointer
+    @media screen and (max-width: 770px)
+        display: none
+    &:hover .test-tabs
+        display: block
+    &::after
+        content: ""
+        bottom: -10px
+        right: 18px
+        width: 5em
+        height: 25px
+        position: absolute
+        display: block
+        z-index: 22
+    .user-avatar
+        max-width: 4em
+        height: 4em
+        border-radius: 50%
+        box-shadow: 0 0 0 2px #7f00ac
+        object-fit: cover
+        @media screen and ( max-width: 1025px )
+            width: 3.5em
+            height: 3.5em
+
+    .menu-user
+        outline: none
+        border: none
+        background: none
+        color: #dad8de
+        transform: rotate(180deg)
+        transition: 1s
+    .test-tabs
+        position: absolute
+        top: 100%
+        transition: 0.5s
+        right: 1em
+        background-color: white
+        display: none
+        width: 130px
+        ul
+            margin: 0
+        button
+            outline: none
+            border: none
+            background-color: inherit
+            width: 100%
+            padding: 0.8em 1em
+            display: flex
+            align-items: center
+            i
+                margin-right: 10px
+            &:hover
+                background-color: #7f00ac
+                transition: all 0.2s
+        a
+            outline: none
+            border: none
+            background-color: inherit
+            width: 100%
+            padding: 0.8em 1em
+            display: flex
+            align-items: center
+            i
+                margin-right: 10px
+            &:hover
+                background-color: #7f00ac
+                transition: all 0.2s
+
+/*BURGER*/ 
+.burger-nav
+    display: none
+    @media screen and (max-width: 770px)
+        display: flex
+        z-index: 1000
+    .menu-list
+        height: 100%
+        ul
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 100%
+    .burger-menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        background-color: rgba(0, 0, 0, 0.75)
+        padding: 20px 15px
+        text-align: center
+        transition: 0.6s all
+        @media screen and (max-width: 770px)
+            overflow: auto
+        @media screen and (max-width: 330px)
+            height: 110vh
+            padding: 35px 15px
+        button
+            border: none
+            outline: none
+            background: none
+            color: white
+            font-size: 20px
+            padding: 7vh 0
+            i
+                margin-right: 20px
+    .hamburger
+        width: 25px
+        margin-right: 10px
+        align-self: center
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 3px
+            transition: 0.5s all
+    .hamburger-active span
+        margin-bottom: -2px
+    .hamburger-active span:nth-child(1)
+        transform: rotate(-45deg)
+    .hamburger-active span:nth-child(2)
+        display: none
+    .hamburger-active span:nth-child(3)
+        transform: rotate(45deg)
+    .burger-active
+        left: 0
+
+/*SEARCH 1*/
+
+.search
+    border: none
+    outline: none
+    height: 50px
+    background: #7f00ac
+    border-radius: 10%
+    color: white
+
+/*SEARCH 2 */
+.navigation
+    display: flex
+.mobile-search
+    color: white
+    font-size: 24px
+    outline: none
+    border: none
+    background: none
+    margin-right: 15px
+    display: none
+    @media screen and ( max-width:770px )
+        display: block
+
+.inp-search
+    display: none
+    #form1
+        background-color: #dddddd
+        outline: none
+        border: none
+        height: 50px
+        &:focus
+            background-color: #dddddd
+            color: black
+.search-active
+    display: block

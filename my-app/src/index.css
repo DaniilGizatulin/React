@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url(http://bgfons.com/upload/ornaments_texture1154.jpg);*/
+    background: #201c2b;
+    /*background: linear-gradient(to right, #8e8e8eff, #e4e4e4ff, #8e8e8eff);*/
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+a:hover {
+    text-decoration: none;
+    color: unset;
+}

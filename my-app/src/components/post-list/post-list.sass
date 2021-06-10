@@ -1,0 +1,147 @@
+.hidden
+    display: none !important
+
+.show
+    display: flex
+
+.item
+    display: flex
+    margin: auto
+    width: 100%
+    flex-direction: column
+    .item-post
+        display: flex
+        margin: auto
+        width: 90%
+        flex-direction: column
+        justify-content: center
+        .post-item-list
+            display: flex
+            padding: 25px 30px
+            width: 55%
+            margin: 20px auto
+            background: #392e5c
+            box-shadow: 0 0 0 1px #7f00ac
+            color: #dad8de
+            font-weight: 700
+            @media screen and ( max-width: 1300px)
+                width: 70%
+                font-size: 14px
+                font-weight: 500
+            @media screen and ( max-width: 1025px)
+                font-size: 12px
+            @media screen and ( max-width: 770px)
+                font-size: 14px
+            @media screen and ( max-width: 604px)
+                width: 90%
+                font-size: 15px
+            @media screen and ( max-width: 484px)
+                width: 100%
+                font-size: 14px
+                padding: 15px 10px
+            @media screen and ( max-width: 330px)
+                letter-spacing: 0.3px
+            .info-user
+                max-width: 10%
+                word-wrap: break-word
+                @media screen and ( max-width:770px )
+                    width: 20%
+                p
+                    margin-top: 10px
+                    font-size: 14px
+                    font-weight: 500
+                    text-align: center
+                    @media screen and ( max-width: 770px  )
+                        font-size: 12px
+                .delete-user
+                    color: rgb(141, 15, 15)
+                    font-weight: 800
+                    font-size: 15px !important
+            .post-user-avatar
+                width: 100%
+                border-radius: 50%
+                box-shadow: 0 0 0 2px #7f00ac
+                margin-right: 20px
+                object-fit: cover
+        .info-post
+            display: flex
+            flex-direction: column
+            justify-content: center
+            margin: 0px 20px
+            width: 100%
+            .header-post
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+            .btn-update-post
+                outline: none
+                border: none
+                background-image: linear-gradient(134deg, #944fff 0, #af00ed 100%)
+                padding: 0em 2em
+                color: #dad8de
+                font-weight: 700
+                height: 70%
+                &:hover
+                    background-image: linear-gradient(268deg, #944fff 0, #af00ed 100%)
+                @media screen and ( max-width: 1300px )
+                    font-size: 12px
+                    padding: 0em 1.3em
+                @media screen and ( max-width: 604px )
+                    font-size: 14px
+                    padding: 0em 1.5em
+                @media screen and ( max-width: 484px )
+                    font-size: 12px
+                    padding: 0em 1.1em
+                    height: 70%
+            .title
+                font-size: 24px
+                font-weight: 700
+                align-self: flex-start
+                @media screen and ( max-width: 1300px )
+                    font-size: 20px
+                @media screen and ( max-width: 1025px )
+                    font-size: 18px
+                @media screen and ( max-width: 770px )
+                    font-size: 20px
+                @media screen and ( max-width: 604px )
+                    font-size: 18px
+                @media screen and ( max-width: 484px )
+                    font-size: 18px
+            .post-image
+                width: 100%
+                height: auto
+                align-items: center
+                margin: 30px 0px
+            .full-text
+                padding: 0
+                height: auto
+                word-wrap: break-word
+                word-break: break-all
+            .footer-post
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .date
+                    color: #8d8d8d
+                    @media screen and ( max-width: 770px )
+                        font-size: 12px
+                .interaction
+                    font-size: 1.2em
+                    @media screen and ( max-width: 770px )
+                        font-size: 1em
+                    .fa-heart
+                        width: 35px
+                        height: 35px
+                        text-align: center
+                        line-height: 35px
+                        font-size: 16px
+                        color: grey
+                        transition: 0.3s all
+                    .like
+                        outline: none
+                        background: none
+                        border: none
+                    .liked
+                        color: red
+                    .offLiked
+                        color: grey
